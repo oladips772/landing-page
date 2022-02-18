@@ -1,0 +1,109 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  background: black;
+}
+
+/* nav and header styling */
+
+nav {
+  height: 70px;
+  max-width: 1300px;
+  margin: 0 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  margin-bottom: 60px;
+  background: black;
+}
+
+nav .links-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.links-tab a {
+  margin: 0 13px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.links-tab a::after {
+  content: "";
+  transition: all 0.3s ease;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: aqua;
+  left: 0;
+  bottom: -5px;
+}
+.links-tab a:hover::after {
+  width: 100%;
+}
+
+.last-tag {
+  border: 2px solid aqua;
+  padding: 6px;
+  border-radius: 2px;
+}
+.fas {
+  color: aqua !important;
+  margin-left: -10px;
+}
+.fa-search {
+  margin-left: 13px;
+}
+
+/* main styling */
+
+main {
+  max-width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 120px;
+  background: rgba(0, 0, 0, 0.7) url("/public/img/swan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  margin-bottom: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+main .info {
+  height: 300px;
+}
+
+.info h4 {
+  color: aqua;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.info h1 {
+  color: white;
+  margin: 10px 0;
+  font-size: 80px;
+}
+.info-tag {
+  border: 2px solid aqua;
+  padding: 14px;
+  border-radius: 2px;
+  width: 120px;
+  color: aqua;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 50px;
+}
