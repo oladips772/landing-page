@@ -107,3 +107,52 @@ main .info {
   cursor: pointer;
   margin-top: 50px;
 }
+
+/* grid div styling */
+.grid {
+  margin-top: 230px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.item_container {
+  background: rgb(19, 18, 18);
+  transition: all 0.2s ease;
+  position: relative;
+}
+.item_container:hover {
+  border: 2px solid aqua;
+}
+.item_container:hover::after {
+  content: "";
+  width: 2px;
+  height: 14%;
+  background-color: aqua;
+  position: absolute;
+  left: 48%;
+  bottom: -30px;
+  transition: all 0.3 ease;
+}
+
+.item_info {
+  padding: 25px;
+  color: white;
+  position: relative;
+}
+
+.item_info h2 {
+  margin: 20px 0px 10px 0px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+.item_info h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 3px;
+  background-color: aqua;
+}
