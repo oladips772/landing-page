@@ -13,8 +13,6 @@ body {
 
 nav {
   height: 70px;
-  max-width: 1300px;
-  margin: 0 40px;
   color: white;
   display: flex;
   align-items: center;
@@ -26,11 +24,23 @@ nav {
   margin-bottom: 60px;
   background: black;
 }
-
+nav .logo {
+  padding-left: 40px;
+}
+.logo h2 {
+  cursor: pointer;
+}
 nav .links-tab {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-right: 40px;
+}
+.fa-bars {
+  font-size: 24px !important;
+  padding-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 .links-tab a {
   margin: 0 13px;
@@ -72,7 +82,7 @@ main {
   max-width: 900px;
   height: 100%;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 190px;
   background: rgba(0, 0, 0, 0.7) url("/public/img/swan.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,6 +131,9 @@ main .info {
   transition: all 0.2s ease;
   position: relative;
 }
+.item_container i{
+  font-size: 30px !important;
+}
 .item_container:hover {
   border: 2px solid aqua;
 }
@@ -156,3 +169,166 @@ main .info {
   height: 3px;
   background-color: aqua;
 }
+.item_info h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 3px;
+  background-color: aqua;
+}
+/* service grid stylinng */
+.service {
+  height: 800px;
+  width: 100%;
+  background: rgba(74, 79, 95, 0.356);
+}
+.service_header {
+  margin: 40px 0px;
+  color: white;
+  padding-top: 40px;
+}
+
+.service_container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service_header h2 {
+  margin: 5px 0;
+  font-weight: bold;
+  position: relative;
+  font-size: xx-large;
+}
+.service_header h2::after {
+  content: "";
+  background-color: aqua;
+  height: 2px;
+  width: 40px;
+  position: absolute;
+  left: -60px;
+  bottom: 20px;
+}
+.service_header p {
+  color: aqua;
+  margin-left: -60px;
+}
+.grid2 {
+  margin-top: 50px; /*  */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  position: relative;
+}
+
+.item_container2 {
+  background: rgb(19, 18, 18);
+  position: relative;
+  border-bottom: 3px solid white;
+  min-height: 220px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.item_container2:hover {
+  background: aqua;
+}
+.item_info2 {
+  padding: 25px;
+  color: white;
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.item_info2:hover {
+  color: black;
+}
+.item_info2 h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.grid2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -130px;
+  width: 2px;
+  height: 12%;
+  background-color: aqua;
+}
+
+/* work grid styling */
+.work {
+  background: rgba(59, 58, 58, 0.8);
+  height: 100%;
+  padding-bottom: 40px;
+}
+.grid3 {
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+.item_container3 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.item_info3 img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+}
+.work_header {
+  display: flex;
+  color: white;
+  max-width: 900px;
+  margin: 0 100px 0 170px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.work_header h2 {
+  margin: 5px 0;
+  font-weight: bold;
+  position: relative;
+  font-size: xx-large;
+}
+.text p {
+  color: aqua;
+  margin-left: -60px;
+}
+.text h2::after {
+  content: "";
+  background-color: aqua;
+  height: 2px;
+  width: 40px;
+  position: absolute;
+  left: -60px;
+  bottom: 20px;
+}
+.work_header .last-tag {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.last-tag:hover {
+  border: none;
+  color: aqua;
+}
+.grid3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -130px;
+  width: 2px;
+  height: 12%;
+  background-color: aqua;
+}
+
+/* medai queries */
+
