@@ -1,66 +1,97 @@
 /** @format */
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 360px) {
   nav .links-tab {
     display: none;
   }
   .fa-bars {
     display: block;
   }
-  main {
-    max-width: 700px;
-    width: 100%;
-  }
-  main .info {
+
+  main .info h4 {
     text-align: center;
-    justify-content: center;
+  }
+
+  main {
+    margin-bottom: 290px;
+  }
+
+  main .info h1 {
+    font-size: 35px;
+  }
+
+  main .info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main .grid {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+    margin: 0 10px;
+  }
+
+  main .grid .item_container {
+    margin: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
   }
-  .info-tag {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 140px;
-    z-index: 999;
-  }
-  .grid {
-    max-width: 600px;
-    grid-template-columns: 1fr;
-    grid-gap: 60px;
-    margin: 0 auto;
-    margin-top: 120px;
-    height: 100%;
-    margin-bottom: 400px;
-  }
+
   .service {
-    margin-top: 600px;
+    height: 400px;
+    margin-bottom: 1400px;
   }
-  .grid2 {
-    grid-template-columns: 1fr 1fr;
-    max-width: 600px;
-    margin: 0 auto;
-    grid-gap: 60px;
-  }
+
   .service_header {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service .grid2 {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+    margin: 0 10px;
+  }
+
+  .service .grid2 .item_container2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
   }
   .work {
-    margin-top: 250px;
+    margin-top: 550px;
+    margin-bottom: 550px;
+    height: 300px;
   }
-  .grid3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 600px;
-    margin: 0 auto;
-    grid-gap: 60px;
-    margin-top: 20px;
+  .work .work_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .item_container3 {
-    /* width: 400px; */
+
+  .work .grid3 {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    margin-bottom: 100px;
+    margin: 0 10px;
   }
-  .item_info3 img {
-    /* width: 400px; */
+
+  .work .item_container3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
   }
+
+  .work .item_container3 img {
+    width: 97%;
+  }
+
+
+footer{
+  margin-top: 2300px;
+}
 }
